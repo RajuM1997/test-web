@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------------- header section styleing start here ------------*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    height: 677px;
+    background: #2D25A0;
+    margin-bottom: 70px;
+}
+
+.main-hedaer {
+    width: 1160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.main-text {
+    width: 450px;
+    height: 250px;
+
+}
+
+.main-text h1 {
+    margin-bottom: 27px;
+    font-size: 64px;
+    color: #fff;
+}
+
+.watch-live-btn {
+    text-decoration: none;
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.5s, color 0.5s;
+}
+
+.watch-live-btn:hover {
+    background: transparent;
+    border: 1px solid #E02C6D;
+    color: lightsalmon;
+}
+
+.banner-image {
+    width: 556px;
+    height: 438px;
+    margin-top: 49px;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/*------------- header section styling end here -----------*/
+
+/*------------ player section styleing start here ----------*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1050px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+
+.player {
+    width: 330px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.player-photos {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.player-photos img {
+    width: 100%;
+}
+
+.player-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    padding-bottom: 10px;
+}
+
+.player-description {
+    color: #6C6C6C;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/*----------- player section styleing end here -----------*/
+
+
+
+
+/* media screen start here */
+
+@media only screen and (max-width: 688px) {
+
+    .main-hedaer {
+        width: 360px;
+        height: 695px;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0;
+
+    }
+
+    .main-text {
+        Width: 278px;
+        Height: 138px;
+    }
+
+    .main-text h1 {
+        font-size: 36px;
+    }
+
+    .banner-image {
+        width: 310px;
+        height: 259px;
+        margin: 0;
+        display: block;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .famous-footballer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+}
